@@ -12,7 +12,8 @@ Commands to play games in the bot. eg.
 * `txt.hangman`, 
 * `txt.minesweeper`
 ## **//VC**
-
+Commands that make bot.txt join your vc and do something. eg. 
+* `txt.bruh`
 ## **//OTHER**
 Commands that dont really fit in other boxes. eg. 
 * `txt.serverinfo`, 
