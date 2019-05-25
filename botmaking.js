@@ -12,7 +12,7 @@ message.reply("Hi there!")
     }
 });
 bot.on("message", async message => {
-const prefix = "."
+const prefix = ">"
   if(message.content.indexOf(prefix) !== 0) return;
 if(message.author.bot) return;
 const args = message.content.slice(prefix.length).trim().split(" ")
