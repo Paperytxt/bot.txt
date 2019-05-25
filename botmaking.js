@@ -25,7 +25,7 @@ const command = args.shift().toLowerCase();
 //sends the message you sent. 
   message.channel.send(says)
  }
-if(command == 'playstatus'){
+if(command === 'playstatus'){
 // like I said, blocks other users.
 if(message.author.id !== ownerid) return message.reply("sorry you cant do that");
 // same thing as sayMessage
