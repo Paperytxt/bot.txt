@@ -20,4 +20,3 @@
 > Commands that dont really fit in other boxes. 
 * `txt.serverinfo`, 
 * `txt.randomcolour`
-
