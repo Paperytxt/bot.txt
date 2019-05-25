@@ -18,3 +18,4 @@
 > Commands that dont really fit in other boxes. 
 * `txt.serverinfo`, 
 * `txt.randomcolour`
+![bot.txt banner](https://cdn.discordapp.com/attachments/571307419146125312/581703747479142404/bottxtbanner.png "bottxtbanner.png")
