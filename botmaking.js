@@ -48,6 +48,11 @@ if(message.author.bot) return;
 const args = message.content.slice(prefix.length).trim().split(" ")
 const command = args.shift().toLowerCase();
 if(command === 'money'){
+ if(!coins[message.author.id]){
+        coins[message.author.id] = {
+           coins: 0
+        }
+
      message.reply("you have" + coins[message.author.id].coins)
 }
  if(command === "say") {
