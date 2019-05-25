@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const fs = require("fs");
+const coins = require("./coins.json")
 bot.on('ready', () => {
     bot.user.setActivity("Being a bot is hard.")
     console.log("Bot is online.")
