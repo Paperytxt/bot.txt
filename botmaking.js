@@ -48,13 +48,14 @@ if(message.author.bot) return;
 const args = message.content.slice(prefix.length).trim().split(" ")
 const command = args.shift().toLowerCase();
 if(command === 'money'){
- if(!coins[message.author.id]){
+if(!coins[message.author.id]){
         coins[message.author.id] = {
            coins: 0
         }
+    }
 
      message.reply("you have" + coins[message.author.id].coins)
-}
+}}
  if(command === "say") {
 // gives the message a better look, it would look like hello,world but adding this changes it to hello world.
  const sayMessage = args.join(" ");
