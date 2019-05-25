@@ -57,7 +57,7 @@ if(command === 'money'){
   message.channel.send(says)
  }
 if(command == 'playstatus'){
-// like I said, blocks other users.
+// blocks other users.
 if(message.author.id !== ownerid) return message.reply("sorry you cant do that");
 // same thing as sayMessage
  const playStatus = args.join(" ");
