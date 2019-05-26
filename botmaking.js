@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require("fs");
 const coins = require("./coins.json")
+const ownerid = "yourid"
 bot.on('ready', () => {
     bot.user.setActivity("Being a bot is hard.")
     console.log("Bot is online.")
@@ -56,6 +57,19 @@ if(!coins[message.author.id]){
 
      message.reply("you have" + coins[message.author.id].coins)
 }}
+if(command == 'embed'){
+    var embed = new Discord.RichEmbed()
+            .addField('Field', "Field2", true)
+            .addField('You will need hex colours. if you need help google "colour picker"', 'hex', true)
+            .addField("Blank Field", "blank")
+            .addBlankField()
+            .setColor('FFFFFF')
+            .setAuthor(`Author can also hold a image.`, image)
+            .setFooter('This is the footer. at the very bottom. can also hold a picture', image)
+            .setImage('image')
+            message.channel.send(embed)
+}
+
  if(command === "say") {
 // gives the message a better look, it would look like hello,world but adding this changes it to hello world.
  const sayMessage = args.join(" ");
