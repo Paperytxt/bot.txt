@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require("fs");
+const math = require("mathjs");
 const coins = require("./coins.json")
 const ownerid = "yourid"
 bot.on('ready', () => {
@@ -56,7 +57,7 @@ if(!coins[message.author.id]){
     }
 
      message.reply("you have" + coins[message.author.id].coins)
-}}
+}
 if(command == 'embed'){
     var embed = new Discord.RichEmbed()
             .addField('Field', "Field2", true)
@@ -69,6 +70,35 @@ if(command == 'embed'){
             .setImage('image')
             message.channel.send(embed)
 }
+if(command === 'pool')
+  {  
+//the choices. pulls a random string from here.
+      let choices = ["apple", 'website','soda can',' light bulb']
+// does the pulling
+            let response = choices[Math.floor(Math.random() * choices.length)]
+//posts the response.
+              message.channel.send(response)
+
+  }
+
+  if(command === "math"){
+// checks if there is any args.
+  if (!args[0]) return message.channel.send('Please Supply Args.');
+  let resp;
+  try {
+      resp = math.eval(args.join(' '));
+  } catch (e) {
+// Error message.
+      return message.channel.send('Sorry, I cant solve that.');
+  }
+// makes a embed and then does the math.
+  const embed = new Discord.RichEmbed()
+  .setColor('FFFFFF')
+       .setTitle('Math')
+      .addField('Question', `${args.join('')}`)
+      .addField('Answer', `${resp}`)
+  message.channel.send(embed);
+  }
 
  if(command === "say") {
 // gives the message a better look, it would look like hello,world but adding this changes it to hello world.
@@ -78,6 +108,24 @@ if(command == 'embed'){
 //sends the message you sent. 
   message.channel.send(says)
  }
+ if(command === "avatar"){
+// checks if you mentioned anyone.
+    if (!message.mentions.users.size) {
+        var embed = new Discord.RichEmbed()
+            .setImage(message.author.displayAvatarURL)
+            .setColor('FFFFFF')
+            message.channel.send(embed)
+        }
+        
+        const avatarList = message.mentions.users.map(user => {
+// if you did then it show their avatar.
+            var embed = new Discord.RichEmbed()
+            .setImage(user.displayAvatarURL)
+            .setColor('FFFFFF')
+            message.channel.send(embed)
+        });
+  }
+
 if(command == 'playstatus'){
 // blocks other users.
 if(message.author.id !== ownerid) return message.reply("sorry you cant do that");
