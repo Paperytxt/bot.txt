@@ -1,2 +1,0 @@
-'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf
-'''o'''yp'p'ppyiitulmilopil,pni,iynpybnvhtrdfvyhfuyjngtuf i dont know python
